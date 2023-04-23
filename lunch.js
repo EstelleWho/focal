@@ -11,36 +11,36 @@
  * hungry is a Boolean, representing if you're hungry or not.
  * availableTime is a Number representing the time you have for lunch,
  * in minutes.
- * 
+ *
  * ************* THOUGHT PROCESS ********************
  * INPUTS:
  * const = function (param1, param2) {}
- * 
+ *
  * OUTPUTS:
  * console.log()
- * 
+ *
  * PROCESSING:
  * - Hungry or Not Hungry?
  * - hungry is a Boolean
  * - availableTime is a number that represents the minutes
  * - Not Hungry: !Hungry "Go back to work!"
- * - Hungry: 
+ * - Hungry:
  *   - < 20 min: "Grab something and eat it in the lab."
  *   - >= 20 min && < 30 min: "Try a place nearby."
  *   - > 30 min: "Reconsider how much time you have."
  */
 
 const whatToDoForLunch = function(hungry, availableTime) {
-    if (hungry === false) {
-      console.log('Go back to work!');
-    } else if (hungry === true && availableTime < 20) {
-      console.log('Grab something and eat it in the lab.');
-    } else if (hungry === true && availableTime >= 20 && availableTime < 30) {
-      console.log('Try a place nearby.');
-    } else if (hungry === true && availableTime > 30) {
-      console.log('Reconsider how much time you have.');
-    }
-}
+  if (hungry === false) {
+    console.log('Go back to work!');
+  } else if (hungry === true && availableTime < 20) {
+    console.log('Grab something and eat it in the lab.');
+  } else if (hungry === true && availableTime >= 20 && availableTime < 30) {
+    console.log('Try a place nearby.');
+  } else if (hungry === true && availableTime > 30) {
+    console.log('Reconsider how much time you have.');
+  }
+};
 
 
 
